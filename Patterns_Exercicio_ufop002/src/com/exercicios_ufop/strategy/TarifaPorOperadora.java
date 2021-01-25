@@ -5,6 +5,11 @@ import com.exercicios_ufop.strategy.classes.OperadoraOi;
 import com.exercicios_ufop.strategy.classes.OperadoraTim;
 import com.exercicios_ufop.strategy.classes.OperadoraVivo;
 
+/**
+ * Enumeração de operadoras com suas respectivas tarifas.
+ * @author Gildo Tiago Azevedo - 17.1.842
+ *
+ */
 public enum TarifaPorOperadora {
 
 	OI,
@@ -12,6 +17,11 @@ public enum TarifaPorOperadora {
 	CLARO,
 	VIVO;
 	
+	/**
+	 * Tarifa referente a cada operadora.
+	 * @param Operadora : TarifaPorOperadora
+	 * @return Tarifa : double
+	 */
 	public static double getTarifaOperadora(TarifaPorOperadora p_Operadora) {
 		if(p_Operadora.equals(TarifaPorOperadora.OI)) {
 			return 0.32;
@@ -28,6 +38,11 @@ public enum TarifaPorOperadora {
 		return -1.0;
 	}
 	
+	/**
+	 * Responsável por instanciar o objeto operadora.
+	 * @param Operadora : TarifaPorOperadora
+	 * @return Implementação da operadora : Object
+	 */
 	public static Operadora novaCobranca(TarifaPorOperadora p_Operadora) {
 		if(p_Operadora.equals(TarifaPorOperadora.OI)) {
 			return new OperadoraOi();

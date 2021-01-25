@@ -2,6 +2,11 @@ package com.exercicios_ufop.strategy;
 
 import java.text.DecimalFormat;
 
+/**
+ * Classe principal para teste.
+ * @author Gildo Tiago Azevedo - 17.1.842
+ *
+ */
 public class Teste {
 
 	public static void main(String[] args) {
